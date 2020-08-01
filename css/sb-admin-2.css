@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #4e73df;
+  color: #224abe;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2198,7 +2198,7 @@ textarea.form-control {
   display: block;
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid {
+.was-validated .form-control:invalid, .form-control.is-invaid {
   border-color: #e74a3b;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23e74a3b' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23e74a3b' stroke='none'/%3e%3c/svg%3e");
@@ -2377,8 +2377,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #0a30a1;
+  border-color: #1443cf;
 }
 
 .btn-primary:hover {
@@ -9875,7 +9875,7 @@ a:focus {
 
 .bg-gradient-primary {
   background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-image: linear-gradient(180deg, #4e73df 200%, #224abe 100%);
   background-size: cover;
 }
 
@@ -9991,6 +9991,7 @@ a:focus {
 
 .text-gray-600 {
   color: #858796 !important;
+  font-weight: bold;
 }
 
 .text-gray-700 {
@@ -9999,10 +10000,13 @@ a:focus {
 
 .text-gray-800 {
   color: #5a5c69 !important;
+  text-decoration: underline;
+  font-weight: 800;
 }
 
 .text-gray-900 {
   color: #3a3b45 !important;
+  font-weight: 900;
 }
 
 .icon-circle {
@@ -10803,7 +10807,7 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+  background: url("../img/login-image.jpg");
   background-position: center;
   background-size: cover;
 }
