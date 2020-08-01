@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>404</title>
+  <title>Create New Invoice</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -40,7 +40,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -50,7 +50,7 @@
       <hr class="sidebar-divider">
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInvoice" aria-expanded="true" aria-controls="collapseInvoice">
           <i class="fas fa-fw fa-file"></i>
           <span>Invoice</span>
@@ -204,15 +204,126 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
           
-          <!-- 404 Error Text -->
-            <div class="text-center">
-              <div class="error mx-auto" data-text="404">404</div>
-              <p class="lead text-gray-800 mb-5">Page Not Found</p>
-              <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-              <a href="dashboard.html">&larr; Back to Dashboard</a>
+          <!-- Page Heading -->
+          <h1 class="h3 mb-4 text-gray-700">Create New Invoice</h1>
+          
+          <!-- Basic Card Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Fill in the Form to Create a New Invoice</h6>
             </div>
+            <div class="card-body">
 
-          <!-- /.container-fluid -->
+              <form>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">First Name</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Last Name</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">NIC Number</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Phone Number</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Email Address</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Date</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="date">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">Category</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Category</option>
+                        <option>Luxury</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">Make</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Make</option>
+                        <option>Toyota</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">Model</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Select Model</option>
+                      <option>Premio</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">With / Without Driver</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Without Driver</option>
+                        <option>Santa Rajapaksha</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Fee</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text" disabled>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Starting Mileage</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">End Mileage</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Total</label>
+                    <input class="form-control" id="exampleFormControlInput1" type="text" disabled>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">Payments</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Yet To Pay</option>
+                        <option>Paid</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Submit Entry"> 
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="reset" class="btn btn-primary btn-user btn-block" value="Clear Form"> 
+                  </div>
+                </div>               
+              </form>
+
+            </div>
+          </div>
 
         </div>
         <!-- /.container-fluid -->
