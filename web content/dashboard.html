@@ -9,14 +9,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Create New Invoice</title>
+  <title>Dasboard</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
 
 </head>
 
@@ -40,8 +40,8 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
+      <li class="nav-item active">
+        <a class="nav-link" href="dashboard.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -50,7 +50,7 @@
       <hr class="sidebar-divider">
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInvoice" aria-expanded="true" aria-controls="collapseInvoice">
           <i class="fas fa-fw fa-file"></i>
           <span>Invoice</span>
@@ -203,125 +203,156 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-          
+
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-700">Create New Invoice</h1>
+          <h1 class="h3 mb-4 text-gray-700">Dashboard</h1>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Vehicles Available</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-900">$40,000</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Monthly)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-900">$215,000</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Today Hires</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-900">18</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Pending Requests</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-900">18</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           
-          <!-- Basic Card Example -->
+          <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Fill in the Form to Create a New Invoice</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Top Customers</h6>
             </div>
             <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Phone Number</th>
+                      <th>Address</th>
+                      <th>Email</th>
+                      <th>NIC</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Phone No</th>
+                      <th>Address</th>
+                      <th>Email</th>
+                      <th>NIC</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>Tharindu</td>
+                      <td>0771234567</td>
+                      <td>Kaluthara</td>
+                      <td>tharindukp@gmail.com</td>
+                      <td>981230678V</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
 
-              <form>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">First Name</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text">
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Last Name</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">NIC Number</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Phone Number</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text">
-                  </div>
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Email Address</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Date</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="date">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">Category</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Select Category</option>
-                        <option>Luxury</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">Make</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Select Make</option>
-                        <option>Toyota</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">Model</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Select Model</option>
-                      <option>Premio</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">With / Without Driver</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Without Driver</option>
-                        <option>Santa Rajapaksha</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Fee</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text" disabled>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Starting Mileage</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text">
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">End Mileage</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlInput1" class="m-0 font-weight-bold text-primary">Total</label>
-                    <input class="form-control" id="exampleFormControlInput1" type="text" disabled>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label for="exampleFormControlSelect1" class="m-0 font-weight-bold text-primary">Payments</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Yet To Pay</option>
-                        <option>Paid</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Submit Entry"> 
-                  </div>
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="reset" class="btn btn-primary btn-user btn-block" value="Clear Form"> 
-                  </div>
-                </div>               
-              </form>
-
+           <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Top Vehicles</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Make</th>
+                      <th>Model</th>
+                      <th>YOR</th>
+                      <th>Fee</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Make</th>
+                      <th>Model</th>
+                      <th>YOR</th>
+                      <th>Fee</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>Suzuki</td>
+                      <td>Swift</td>
+                      <td>2019</td>
+                      <td>4500.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
@@ -372,14 +403,14 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="../js/sb-admin-2.min.js"></script>
 
 </body>
 
